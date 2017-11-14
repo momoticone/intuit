@@ -11,10 +11,35 @@
 </header>
 
 <div id=formulaire>
-<h1> hello</h1>
 
 
+<form accept-charset="UTF-8" action="/users" class="new_user"
+      id="new_user" method="post">
+    
+  <input name="utf8" type="hidden" value="&#x2713;" />
+    
+    
+  <input name="authenticity_token" type="hidden"
+         value="NNb6+J/j46LcrgYUC60wQ2titMuJQ5lLqyAbnbAUkdo=" />
+    
+    
+  <label for="user_email">email</label>
+  <input id="user_name" name="user[email]" type="text" />
 
+  <label for="user_phone">phone</label>
+  <input id="user_email" name="user[phone]" type="email" />
+
+  <label for="user_password">Password</label>
+  <input id="user_password" name="user[password]"
+         type="password" />
+
+  <label for="user_password_confirmation">Confirmation</label>
+  <input id="user_password_confirmation"
+         name="user[password_confirmation]" type="password" />
+
+  <input class="btn btn-primary" name="commit" type="submit"
+         value="Create account" />
+</form>
 </div>
 
 
@@ -36,4 +61,4 @@
 			<div class="footer-smallprint">
 				<small>© 2017 Intuit, Inc. All rights reserved. Intuit, QuickBooks, QB, TurboTax, ProConnect and Mint are registered trademarks of Intuit Inc.<br>Terms and conditions, features, support, pricing, and service options subject to change without notice.</small>
 			</div>
-		</footer>
+</footer>
